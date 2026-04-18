@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arun Natarajan</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a href="index.html" class="nav-logo">Arun Natarajan</a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">About</a></li>
+      <li><a href="resume.html">Experience</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" style="padding:0;">
+    <div class="hero-text">
+      <span class="hero-eyebrow">Computer Engineering · Texas A&M</span>
+      <h1 class="hero-name">Arun<br><em>Natarajan</em></h1>
+      <p class="hero-title">Engineer · Analyst · Builder</p>
+      <p class="hero-bio">
+        I'm a Computer Engineering student at Texas A&M University with a passion
+        for strategy consulting, financial technology, and startups. I thrive at
+        the intersection of technology and business — turning data and code into
+        real decisions and real impact.
+      </p>
+      <div class="hero-cta">
+        <a href="resume.html" class="btn btn-primary">View Experience</a>
+        <a href="contact.html" class="btn btn-outline">Get in Touch</a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="headshot.jpg" alt="Arun Natarajan" />
+    </div>
+  </section>
+
+  <!-- HIGHLIGHTS -->
+  <section class="highlights" style="padding:0;">
+    <div class="highlights-grid">
+      <div class="highlight-item">
+        <div class="highlight-number">3.70</div>
+        <div class="highlight-label">GPA at Texas A&M</div>
+      </div>
+      <div class="highlight-item">
+        <div class="highlight-number">4×</div>
+        <div class="highlight-label">Industry Internships</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section>
+    <div class="about-grid">
+      <div>
+        <span class="section-label">About Me</span>
+        <h2 class="section-title">Technology meets<br><em style="font-family:'Cormorant Garamond',serif;font-style:italic;">strategy.</em></h2>
+        <div class="divider"></div>
+        <div class="about-text">
+          <p>
+            I'm pursuing a B.S. in Computer Engineering with a Minor in Economics at Texas A&M
+            University, graduating December 2026. I'm part of the Brown Engineering Honors Program
+            and have been named to the Dean's Honor Roll.
+          </p>
+          <p>
+            My career has spanned software engineering at Dell Technologies, business analytics at
+            Capital One, public policy research at the U.S. House Foreign Affairs Committee, and
+            most recently an upcoming role as a Summer Analyst at Goldman Sachs in Global Banking
+            & Markets.
+          </p>
+          <p>
+            Outside of work, I'm President of the Texas A&M Consulting Group, a Mays Business
+            Fellow, and a Venture Associate at Aggie Venture Fund — always looking to learn from
+            founders building something new.
+          </p>
+        </div>
+      </div>
+      <div>
+        <span class="section-label">Technical Skills</span>
+        <div class="divider"></div>
+        <div class="skills-grid">
+          <span class="skill-tag">Python</span>
+          <span class="skill-tag">C / C++</span>
+          <span class="skill-tag">Go</span>
+          <span class="skill-tag">Java</span>
+          <span class="skill-tag">JavaScript</span>
+          <span class="skill-tag">SQL</span>
+          <span class="skill-tag">Docker</span>
+          <span class="skill-tag">Kubernetes</span>
+          <span class="skill-tag">Git</span>
+          <span class="skill-tag">Grafana</span>
+          <span class="skill-tag">REST APIs</span>
+          <span class="skill-tag">Jenkins CI</span>
+        </div>
+
+        <div style="margin-top:2.5rem;">
+          <span class="section-label">Interests</span>
+          <div class="divider"></div>
+          <div class="skills-grid">
+            <span class="skill-tag">Global Affairs</span>
+            <span class="skill-tag">FinTech</span>
+            <span class="skill-tag">Startups</span>
+            <span class="skill-tag">New England Patriots</span>
+            <span class="skill-tag">Cooking</span>
+            <span class="skill-tag">Political Memoirs</span>
+            <span class="skill-tag">Geography</span>
+            <span class="skill-tag">Aggie Football</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 Arun Natarajan</p>
+    <p>Leander, TX · <a href="mailto:arun.annamalai4@tamu.edu" style="color:var(--accent);text-decoration:none;">arun.annamalai4@tamu.edu</a></p>
+  </footer>
+
+  <script>
+    // Scroll reveal
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((e, i) => {
+        if (e.isIntersecting) {
+          setTimeout(() => e.target.classList.add('visible'), i * 120);
+        }
+      });
+    }, { threshold: 0.15 });
+
+    document.querySelectorAll('.highlight-item, .exp-item').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
